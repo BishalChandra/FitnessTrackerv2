@@ -1,0 +1,101 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, sans-serif;
+}
+
+body{
+  background:#f5f7f9;
+}
+
+/* NAVBAR */
+.navbar{
+  background:#a8ff5a;
+  padding:14px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:22px;
+}
+
+.nav-links{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.pill{
+  background:#000;
+  color:#fff;
+  padding:8px 18px;
+  border-radius:22px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.pill.active{
+  background:#22cc55;
+  color:#000;
+  font-weight:600;
+}
+
+/* PROFILE */
+.profile-section{
+  display:flex;
+  justify-content:center;
+  padding:60px 20px;
+}
+
+.profile-card{
+  background:#fff;
+  width:100%;
+  max-width:420px;
+  border-radius:20px;
+  padding:30px;
+  text-align:center;
+  box-shadow:0 12px 30px rgba(0,0,0,0.12);
+}
+
+.avatar{
+  font-size:60px;
+  margin-bottom:15px;
+}
+
+.profile-card h2{
+  margin-bottom:5px;
+}
+
+.email{
+  color:#777;
+  font-size:14px;
+  margin-bottom:25px;
+}
+
+.info{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:30px;
+}
+
+.info div{
+  text-align:center;
+}
+
+.info span{
+  display:block;
+  font-size:12px;
+  color:#666;
+}
+
+.green-btn{
+  background:#9cff57;
+  border:none;
+  padding:12px 30px;
+  border-radius:25px;
+  font-weight:600;
+  cursor:pointer;
+}

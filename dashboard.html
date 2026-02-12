@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FitTrack Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">🏋️ <strong>FitTrack Dashboard</strong></div>
+  <nav class="nav-links">
+    <a class="pill active" href="dashboard.html">Home</a>
+    <a class="pill" href="videos.html">Videos</a>
+    <a class="pill" href="gallery.html">Gallery</a>
+    <a class="pill" href="support.html">Support</a>
+    <a class="pill" href="profile.html">Profile</a>
+    <a class="pill" href="logout.html">Logout</a>
+  </nav>
+</header>
+
+<!-- MAIN GRID -->
+<main class="grid">
+
+  <!-- WELCOME -->
+  <div class="card">
+    <h2>Welcome, Bishal 👋</h2>
+    <p>Track your fitness progress below.</p>
+    <em>"The only bad workout is the one that didn't happen."</em>
+
+    <h4>Weekly Goal Progress</h4>
+    <div class="progress-bar">
+      <div id="progressFill" class="progress-fill"></div>
+    </div>
+    <p id="progressText"></p>
+  </div>
+
+  <!-- PROGRESS INFO -->
+  <div class="card">
+    <a href="progress.html" class="green-btn">📊 View Progress Charts</a>
+    <ul>
+      <li>🏃 Workout trends</li>
+      <li>🔥 Calories burned</li>
+      <li>💪 Body stats</li>
+    </ul>
+  </div>
+
+  <!-- LOG WORKOUT -->
+  <div class="card">
+    <h3>Log Workout</h3>
+    <input id="activity" placeholder="Activity (e.g. Running)">
+    <input id="duration" type="number" placeholder="Duration (mins)">
+    <input id="calories" type="number" placeholder="Calories Burned">
+    <button class="black-btn" onclick="addWorkout()">Add Workout</button>
+
+    <div class="table-head">
+      <span>Date</span>
+      <span>Activity</span>
+      <span>Duration</span>
+      <span>Calories</span>
+    </div>
+    <div id="workoutList"></div>
+  </div>
+
+  <!-- TRACK STEPS -->
+  <div class="card">
+    <h3>Track Steps</h3>
+    <input id="stepsInput" type="number" placeholder="Steps Today">
+    <button class="black-btn" onclick="saveSteps()">Add Steps</button>
+    <p id="stepsDisplay"></p>
+  </div>
+
+  <!-- BODY STATS -->
+  <div class="card">
+    <h3>Body Stats</h3>
+    <input id="weight" type="number" placeholder="Weight (kg)">
+    <input id="bmi" type="number" placeholder="BMI">
+    <button class="black-btn" onclick="saveBodyStats()">Save</button>
+    <p id="bodyDisplay"></p>
+  </div>
+
+  <!-- AI SUGGESTION -->
+  <div class="card ai">
+    <h3>🤖 AI Fitness Suggestion</h3>
+    <p id="aiText"></p>
+  </div>
+
+</main>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
